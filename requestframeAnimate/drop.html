@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>俄罗斯方块(开发中)</title>
+    <link rel="stylesheet" href="./drop.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-display__border">
+        <div class="container-display">
+          <div class="container-display__left"></div>
+          <div class="container-display__right">
+            <div class="">
+            <div class="preview-next">
+              <div class="container-row">
+                <span class="element"></span>
+                <span class="element"></span>
+                <span class="element"></span>
+                <span class="element"></span>
+                <span class="element"></span>
+                <span class="element"></span>
+              </div>
+              <div class="container-row">
+                <span class="element"></span>
+                <span class="element"></span>
+                <span class="element"></span>
+                <span class="element"></span>
+                <span class="element"></span>
+                <span class="element"></span>
+              </div>
+              <div class="container-row">
+                <span class="element"></span>
+                <span class="element"></span>
+                <span class="element"></span>
+                <span class="element"></span>
+                <span class="element"></span>
+                <span class="element"></span>
+              </div>
+              <div class="container-row">
+                <span class="element"></span>
+                <span class="element"></span>
+                <span class="element"></span>
+                <span class="element"></span>
+                <span class="element"></span>
+                <span class="element"></span>
+              </div>
+            </div>
+            <div class="timer">
+              <span class="digital"></span>
+              <span class="digital"></span>
+              <span class="digital digital-colon__on"></span>
+              <span class="digital"></span>
+              <span class="digital"></span>
+              <span class="digital digital-colon__on"></span>
+              <span class="digital"></span>
+              <span class="digital"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-group">
+      <div class="btn-group__reset" onclick="reset()">Reset</div>
+      <div class="btn-group__start" onclick="start()">Start</div>
+    </div>
+    <script src="./drop.js"></script>
+  </body>
+</html>

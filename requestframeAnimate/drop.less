@@ -1,0 +1,140 @@
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #efcc2c;
+  width: 440px;
+  height: 600px;
+  border-radius: 8px;
+}
+.container-display {
+  width: 380px;
+  height: 470px;
+  margin: 0 auto;
+  background: #9ead86;
+  padding: 8px;
+  border: 2px solid #494536;
+  &__left {
+    border: 2px solid #000;
+    padding: 3px 1px 1px 3px;
+    width: 220px;
+    display: inline-block;
+  }
+  &__right {
+    display: inline-block;
+    .preview-next {
+      padding: 3px 1px 1px 3px;
+      margin-bottom: 10px;
+    }
+  }
+  &__border {
+    width: 400px;
+    height: 490px;
+    border: 5px solid;
+    border-color: #987f0f #fae36c #fae36c #987f0f;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+.container-row {
+  font-size: 0px;
+  .border-color {
+    border-color: #000;
+  }
+  .element {
+    display: inline-block;
+    -webkit-text-size-adjust: none;
+    width: 12px;
+    height: 12px;
+    padding: 2px;
+    border: 2px solid #879372;
+    margin: 0 2px 2px 0;
+    &:after {
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+      background: #879372;
+      overflow: hidden;
+    }
+    &__border {
+      border-color: #000;
+      &:after {
+        background: #000;
+      }
+    }
+  }
+}
+
+.timer {
+  font-size: 0;
+}
+
+.digital {
+  background: url("./digital.png") no-repeat;
+  width: 14px;
+  height: 24px;
+  display: inline-block;
+  &-origin {
+    width: 260px;
+    height: 100px;
+  }
+  &-0 {
+    background-position: -75px -25px;
+  }
+  &-1 {
+    background-position: -89px -25px;
+  }
+  &-2 {
+    background-position: -103px -25px;
+  }
+  &-3 {
+    background-position: -117px -25px;
+  }
+  &-4 {
+    background-position: -131px -25px;
+  }
+  &-5 {
+    background-position: -145px -25px;
+  }
+  &-6 {
+    background-position: -159px -25px;
+  }
+  &-7 {
+    background-position: -173px -25px;
+  }
+  &-8 {
+    background-position: -186px -25px;
+  }
+  &-9 {
+    background-position: -201px -25px;
+  }
+  &-colon__on {
+    background-position: -230px -25px;
+  }
+  &-colon__off {
+    background-position: -244px -25px;
+  }
+}
+
+.btn-group {
+  width: 200px;
+  margin: 10px auto 0;
+  &__reset,
+  &__start {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    border-radius: 15px;
+    color: transparent;
+    color:#fff;
+  }
+  &__start {
+    background: rgb(17, 185, 236);
+  }
+  &__reset {
+    background: rgb(221, 236, 17);
+  }
+}
